@@ -14,6 +14,7 @@ nav {
   width: 100%;
   padding-left: 3rem;
   background-color: #2356b2;
+  height: 5rem;
 }
 
 .navbar-list {
@@ -63,8 +64,10 @@ nav img {
   color: #2356b2;
 }
 
-.info-section p {
+.info-section a {
   font-weight: 300;
+  text-decoration: none;
+  color: black;
 }
 
 .social-links {
@@ -95,18 +98,72 @@ hr {
 .cta-box {
   display: flex;
   flex-direction: column;
+}
+
+.cta-box p {
+  padding: 1.5rem;
+  color: #f8f9fa;
+  background-color: #2356b2;
+  width: 100%;
+  display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 1rem;
+  font-size: 1.1rem;
 }
 
 .cta-image {
-  margin-top: 1rem;
   height: 17rem;
   width: auto;
 }
 
 footer {
-  height: 30vh;
+  height: 25vh;
   background-color: #2356b2;
+}
+
+/* about us */
+
+.team-section {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+.team-section h1 {
+  margin: 4rem;
+  color: #2c3e50;
+}
+
+.team-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+
+.team-member {
+  width: 20rem;
+  height: auto;
+  text-align: center;
+}
+
+.team-member h3 {
+  color: #2c3e50;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.team-member p {
+  color: #4d4d4d;
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.team-member img {
+  height: auto;
+  width: 100%;
 }
