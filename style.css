@@ -167,3 +167,119 @@ footer {
   height: auto;
   width: 100%;
 }
+
+.card-container{
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+.card{
+  width:325px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+  margin:20px;
+  height: 500px
+}
+.card img{
+  width: 100%;
+  height: 50%;
+}
+.card-content {
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  justify-content: space-between;
+}
+
+.card-content h3{
+  font-size: 28px;
+  margin-bottom: 12px;
+
+}
+.card-content p{
+  color:#666;
+  font-size: 15px;
+  min-height: 80px;
+  margin-bottom: 16px;
+  line-height: 1.3;
+}
+.card-content .btn{
+  display:inline-block;
+  padding:8px 16px;
+  background-color: #2356b2;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 16px;
+  color: #fff;
+}
+.card-content .btn:hover{
+  background-color: #103477;
+}
+
+.membership-container{
+  display: flex; /* Flexbox layout */
+  justify-content: center; /* Space between the mentor and mentee sections */
+  align-items: stretch; /* Ensures both columns stretch to the same height */
+  gap: 70px; /* Add space between the two columns */
+  margin: 20px;
+  background-color: #f0f0f0;
+  max-width: 60%;
+  padding: 20px;
+  min-height: 100%;
+  border-radius: 10px;
+}
+ 
+.mentors{
+  flex: 1;
+  max-width: 30%;
+  min-height: 100%;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: left;
+  display: flex; /* Flexbox to handle content */
+  flex-direction: column; /* Stack the content vertically */
+}
+
+.mentors h3{
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.mentors ul{
+  margin-top: 10px;
+  padding-left: 20px;
+}
+.mentors li{
+  margin-bottom: 5px;
+}
+
+.mentors p{
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.mentors .btn{
+  display:inline-block;
+  text-align: center;
+  padding:8px 16px;
+  background-color: #2356b2;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: auto;
+  color: #fff;
+}
+
+.mentors .spacer{
+  margin-bottom: 16px;
+}
+
+.mentors .btn:hover{
+  background-color: #103477;
+}
