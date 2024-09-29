@@ -20,17 +20,33 @@ nav {
 .navbar-list {
   display: flex;
   justify-content: space-around;
+  align-items: stretch; /* Ensure li items stretch to the height of the navbar */
   list-style: none;
   margin: 0 auto;
+  padding: 0;
   width: 40%;
   padding-right: 5rem;
+  height: 100%;
+}
+
+.navbar-list li{
+  display: flex;
+  align-items: center; /* Center align text vertically */
+  flex-grow: 1; /* Make li stretch horizontally to fill the navbar */
+  height: 100%; /* Make sure li takes the full height of the navbar */
 }
 
 .navbar-list li a {
   text-decoration: none;
   color: #f8f9fa;
+  display: flex; /* Make a a flex container */
+  align-items: center; /* Center text vertically */
+  justify-content: center; /* Center text horizontally */
+  width: 100%; /* Full width of the li */
+  height: 100%; /* Full height of the li */
+  padding: 0; /* Remove default padding */
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
-
 nav img {
   width: 4rem;
   height: auto;
@@ -362,4 +378,8 @@ form fieldset {
   border: none;
   padding: 0;
   margin-bottom: 20px;
+}
+
+.navbar-list li:hover a{
+  background-color: #103477;
 }
