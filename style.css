@@ -250,7 +250,10 @@ footer {
   padding: 20px;
   min-height: 100%;
   border-radius: 10px;
-}
+  background-image: linear-gradient(#cccccc, #cccccc); /* Adds the line */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 2px 90%; /* Adjust the thickness and height of the line */}
  
 .mentors{
   flex: 1;
