@@ -250,11 +250,18 @@ footer {
   padding: 20px;
   min-height: 100%;
   border-radius: 10px;
-  background-image: linear-gradient(#cccccc, #cccccc); /* Adds the line */
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 2px 90%; /* Adjust the thickness and height of the line */}
+  min-height: 400px;
+  position: relative;
+}
  
+.divider {
+  width: 2px; /* Thickness of the line */
+  background-color: #cccccc;
+  height: 90%; /* 100% height minus padding (20px top + 20px bottom) */
+  position: absolute; 
+  z-index: 1; /* Ensure the line appears above the background */
+}
+
 .mentors{
   flex: 1;
   max-width: 40%;
@@ -469,17 +476,20 @@ form fieldset {
   .membership-container {
     flex-direction: column; /* Stack the mentors sections vertically */
     gap: 20px; /* Add a smaller gap between the stacked sections */
-    /* background-size: none; Hide the line on mobile */
-    background-image: linear-gradient(to right, #cccccc, #cccccc); /* Horizontal gradient */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position-y: 55%;
-    background-size: 75% 2px;
     min-width: 90%;
+    position: static; 
+
+  }
+  .divider {
+    width: 100%; /* Make the line horizontal on mobile */
+    height: 2px; /* Thickness of the line */
+    margin: 20px 0; /* Add some space around the line */
+    position: static; 
+
   }
 
   .mentors {
-    max-width: 100%; /* Allow the mentors sections to take full width on mobile */
+    max-width: 100%;
   }
   .gform{
     width: 80%;
