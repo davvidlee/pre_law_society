@@ -19,10 +19,12 @@
     <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+    <script type="text/javascript" src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
     <nav>
-      <img src="img/logo.png" alt="Logo" />
+      <img src="img/logo.png" alt="Logo" class="logo"/>
       <ul class="navbar-list">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -30,6 +32,14 @@
         <li><a href="membership.html">Membership</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
+      <button onclick="dropdown()" class="dropbtn">&#9776;</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="benefits.html">Benefits</a>
+          <a href="membership.html">Membership</a>
+          <a href="contact.html">Contact</a>
+        </div>
     </nav>
     <div class="hero">
       <div class="hero-content">
