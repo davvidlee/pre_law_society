@@ -29,7 +29,7 @@ nav {
   height: 100%;
 }
 
-.navbar-list li{
+.navbar-list li {
   display: flex;
   align-items: center; /* Center align text vertically */
   flex-grow: 1; /* Make li stretch horizontally to fill the navbar */
@@ -99,6 +99,10 @@ hr {
   margin-left: 15rem;
   margin-right: 15rem;
   margin-bottom: 4rem;
+}
+
+.cta-link {
+  text-decoration: none; /* Remove underline */
 }
 
 .cta-section {
@@ -185,22 +189,22 @@ footer {
   width: 100%;
 }
 
-.card-container{
-  display:flex;
+.card-container {
+  display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 100px;
 }
-.card{
-  width:325px;
+.card {
+  width: 325px;
   background-color: #f0f0f0;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
-  margin:20px;
-  height: 500px
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  height: 500px;
 }
-.card img{
+.card img {
   width: 100%;
   height: 50%;
 }
@@ -214,32 +218,31 @@ footer {
   justify-content: space-between;
 }
 
-.card-content h3{
+.card-content h3 {
   font-size: 28px;
   margin-bottom: 12px;
-
 }
-.card-content p{
-  color:#666;
+.card-content p {
+  color: #666;
   font-size: 15px;
   min-height: 80px;
   margin-bottom: 16px;
   line-height: 1.3;
 }
-.card-content .btn{
-  display:inline-block;
-  padding:8px 16px;
+.card-content .btn {
+  display: inline-block;
+  padding: 8px 16px;
   background-color: #2356b2;
   text-decoration: none;
   border-radius: 4px;
   margin-top: 16px;
   color: #fff;
 }
-.card-content .btn:hover{
+.card-content .btn:hover {
   background-color: #103477;
 }
 
-.membership-container{
+.membership-container {
   display: flex; /* Flexbox layout */
   justify-content: center; /* Space between the mentor and mentee sections */
   align-items: stretch; /* Ensures both columns stretch to the same height */
@@ -253,16 +256,16 @@ footer {
   min-height: 400px;
   position: relative;
 }
- 
+
 .divider {
   width: 2px; /* Thickness of the line */
   background-color: #cccccc;
   height: 90%; /* 100% height minus padding (20px top + 20px bottom) */
-  position: absolute; 
+  position: absolute;
   z-index: 1; /* Ensure the line appears above the background */
 }
 
-.mentors{
+.mentors {
   flex: 1;
   max-width: 40%;
   min-height: 100%;
@@ -274,29 +277,29 @@ footer {
   flex-direction: column; /* Stack the content vertically */
 }
 
-.mentors h3{
+.mentors h3 {
   font-size: 24px;
   margin-bottom: 16px;
   text-align: center;
 }
 
-.mentors ul{
+.mentors ul {
   margin-top: 10px;
   padding-left: 20px;
 }
-.mentors li{
+.mentors li {
   margin-bottom: 5px;
 }
 
-.mentors p{
+.mentors p {
   font-size: 16px;
   line-height: 1.6;
 }
 
-.mentors .btn{
-  display:inline-block;
+.mentors .btn {
+  display: inline-block;
   text-align: center;
-  padding:8px 16px;
+  padding: 8px 16px;
   background-color: #2356b2;
   text-decoration: none;
   border-radius: 4px;
@@ -304,11 +307,11 @@ footer {
   color: #fff;
 }
 
-.mentors .spacer{
+.mentors .spacer {
   margin-bottom: 16px;
 }
 
-.mentors .btn:hover{
+.mentors .btn:hover {
   background-color: #103477;
 }
 .honeypot-field {
@@ -355,7 +358,7 @@ form textarea::placeholder {
 
 /* Button styling */
 form button {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   padding: 14px 20px;
   border: none;
@@ -378,7 +381,7 @@ form .thankyou_message {
   font-size: 1.5em;
   margin-top: 10px;
   display: none; /* Hidden by default */
-  color: #4CAF50;
+  color: #4caf50;
 }
 
 /* Honeypot field styling */
@@ -391,7 +394,7 @@ form fieldset {
   margin-bottom: 20px;
 }
 
-.navbar-list li:hover a{
+.navbar-list li:hover a {
   background-color: #103477;
 }
 
@@ -404,7 +407,7 @@ form fieldset {
   z-index: 1;
   width: 200px; /* Adjust width as needed */
 }
-  /* Dropdown Content (Hidden by Default) */
+/* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -414,7 +417,7 @@ form fieldset {
   z-index: 1;
   width: 200px; /* Adjust width as needed */
 }
-.dropbtn{
+.dropbtn {
   display: none;
   position: absolute;
   right: 0; /* Align the dropdown content to the right */
@@ -422,10 +425,14 @@ form fieldset {
   z-index: 1;
 }
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;}
+.show {
+  display: block;
+}
 
 @media (max-width: 768px) {
   .dropbtn {
@@ -438,20 +445,18 @@ form fieldset {
     right: 0;
     display: block;
   }
-  
+
   /* Dropdown button on hover & focus
   .dropbtn:hover, .dropbtn:focus {
     background-color: #2980B9;
   } */
-  
+
   /* The container <div> - needed to position the dropdown content */
   .navbar-dropdown {
     position: relative;
     display: inline-block;
   }
-  
 
-  
   /* Links inside the dropdown */
   .dropdown-content a {
     color: black;
@@ -460,15 +465,15 @@ form fieldset {
     display: block;
   }
 
-  .navbar-list{
-    display:none;
+  .navbar-list {
+    display: none;
   }
-  .logo{
+  .logo {
     left: 0;
     margin-left: 15px;
     position: absolute;
   }
-  .desc{
+  .desc {
     width: 80%;
     text-align: center;
   }
@@ -477,21 +482,19 @@ form fieldset {
     flex-direction: column; /* Stack the mentors sections vertically */
     gap: 20px; /* Add a smaller gap between the stacked sections */
     min-width: 90%;
-    position: static; 
-
+    position: static;
   }
   .divider {
     width: 100%; /* Make the line horizontal on mobile */
     height: 2px; /* Thickness of the line */
     margin: 20px 0; /* Add some space around the line */
-    position: static; 
-
+    position: static;
   }
 
   .mentors {
     max-width: 100%;
   }
-  .gform{
+  .gform {
     width: 80%;
     max-width: 80%;
     min-width: 300px;
